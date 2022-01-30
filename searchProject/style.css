@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #e0e7ff;
+  --color-secondary: #a5b4fc;
+  --color-font: #18181b;
+  --color-white: #fff;
+}
+body {
+  font-family: "ABeeZee";
+}
+p {
+  font-size: 0.6rem;
+}
+.block {
+  padding: 1rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.1rem;
+  }
+  .contain {
+    padding: 2rem 5rem;
+  }
+}
+/* search section */
+
+.search {
+  position: sticky;
+  top: 0;
+  height: 35vh;
+}
+.search__wrapper {
+  height: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+.search__header {
+  color: var(--color-font);
+}
+.search__box {
+  display: flex;
+  flex-direction: column;
+}
+.search__items {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-primary);
+}
+.search__items a {
+  background-color: var(--color-white);
+}
+.search__items a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+/* product section */
+
+.product__wrapper {
+  background-color: #f8fafc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__desc {
+  background-color: #fff;
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+.product__img {
+  background-color: green;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+.product__img img {
+  width: 100%;
+  height: 100%;
+}
+.product__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .product__desc {
+    width: 30%;
+    height: 250px;
+  }
+}

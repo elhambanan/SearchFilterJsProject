@@ -1,0 +1,1 @@
+const productWrapper = document.querySelector(".product__wrapper");
